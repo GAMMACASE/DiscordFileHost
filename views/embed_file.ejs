@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:site_name" content="DiscordFileHost">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content=<%= fileURL %>>
+	<meta property="og:description" content="<%= fileName %> ∙ <%= fileSize %>">
+	<meta property="og:title" content="Download">
+	<meta property="og:image" content="<%= frontURL %>/icons/file.png">
+	
+	<meta name="theme-color" content="#596AED">
+	<script>
+		window.location.replace("<%= fileURL %>");
+		
+		setTimeout(() => {
+			// window.close();
+			history.back();
+		}, 3000);
+	</script>
+</head>
+<body>
+</body>
+</html>

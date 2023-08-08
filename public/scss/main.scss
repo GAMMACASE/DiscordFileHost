@@ -1,0 +1,115 @@
+@import "bootstrap/scss/functions";
+
+$input-btn-focus-width: 0px;
+$input-btn-border-width: 0px;
+
+$darker: #000;
+$dark: #202225;
+$primary: #36393F;
+$secondary: #2F3136;
+$info: #596AED;
+$danger: #ee4444;
+$success: #39a464;
+
+$font-size-base: 0.5rem;
+
+$btn-close-width: 2em;
+
+//$caret-width: 0em;
+
+$dropdown-dark-bg: $dark;
+$dropdown-dark-link-hover-bg: $info;
+$dropdown-link-active-bg: rgba($info, .6);
+
+@import "bootstrap/scss/variables";
+
+$custom-colors: (
+  "darker": $darker
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$enable-dark-mode: false;
+
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/transitions";
+
+//@import "bootstrap/scss/forms";
+//@import "bootstrap/scss/button-group";
+//@import "bootstrap/scss/nav";
+//@import "bootstrap/scss/navbar";
+//@import "bootstrap/scss/card";
+//@import "bootstrap/scss/accordion";
+//@import "bootstrap/scss/breadcrumb";
+//@import "bootstrap/scss/pagination";
+//@import "bootstrap/scss/badge";
+//@import "bootstrap/scss/alert";
+//@import "bootstrap/scss/list-group";
+//@import "bootstrap/scss/modal";
+//@import "bootstrap/scss/tooltip";
+//@import "bootstrap/scss/popover";
+//@import "bootstrap/scss/carousel";
+//@import "bootstrap/scss/spinners";
+//@import "bootstrap/scss/offcanvas";
+//@import "bootstrap/scss/placeholders";
+
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+tr:last-of-type td:first-of-type {
+	border-bottom-left-radius: 3px;
+}
+
+tr:last-of-type td:last-of-type {
+	border-bottom-right-radius: 3px;
+}
+
+.dropdown-danger {
+	color: $danger;
+	background-color: $dropdown-dark-bg;
+}
+
+.dropdown-danger:hover, .dropdown-danger:focus {
+	color: $white;
+	background-color: $danger;
+}
+
+.dropdown-danger:active {
+	background-color: rgba($danger, .6);
+}
+
+.dot-sep::before {
+	padding: 3px;
+	content: '·';
+}
+
+.file-drop-zone::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-style: dashed;
+	border-width: 6px;
+	border-color: $info;
+	border-radius: $border-radius-sm;
+	background-color: rgba($primary, .7);
+	z-index: 9999;
+}

@@ -1,0 +1,61 @@
+{
+	"env": {
+		"node": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"rules": {
+		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/explicit-module-boundary-types": ["off"],
+		"brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+		"comma-spacing": "error",
+		"comma-style": "error",
+		"dot-location": ["error", "property"],
+		"handle-callback-err": "off",
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"max-nested-callbacks": ["error", { "max": 6 }],
+		"max-statements-per-line": ["error", { "max": 2 }],
+		"no-unused-vars": ["off", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+		"no-shadow": "off",
+		"@typescript-eslint/no-shadow": ["error"],
+		"@typescript-eslint/no-unused-vars": ["off"],
+		"no-console": "off",
+		"no-empty": ["error", { "allowEmptyCatch": true }],
+		"no-empty-function": "off",
+		"@typescript-eslint/no-empty-function": ["off"],
+		"no-floating-decimal": "error",
+		"no-inline-comments": "error",
+		"no-lonely-if": "error",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"no-multi-spaces": "error",
+		"no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 0 }],
+		"no-var": "error",
+		"object-curly-spacing": ["error", "always"],
+		"prefer-const": "error",
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"space-before-blocks": "error",
+		"space-before-function-paren": ["off", {
+			"anonymous": "never",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
+		"space-in-parens": "error",
+		"space-infix-ops": "error",
+		"space-unary-ops": "error",
+		"spaced-comment": "error",
+		"yoda": "error"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"extends": "@tsconfig/node16/tsconfig.json",
+
+	"compilerOptions": {
+		"sourceMap": true,
+
+		"baseUrl": ".",
+		"paths": {
+			"*": ["src/*", "dist/*"]
+		},
+
+		"target": "ES2021",
+		"outDir": "./dist",
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"strict": true,
+
+		"removeComments": true,
+
+		"esModuleInterop": false,
+		// "resolveJsonModule": true,
+		"allowSyntheticDefaultImports": false
+	},
+	
+	"include": ["./src/**/*.ts"],
+	"exclude": ["node_modules", "dist"]
+}
