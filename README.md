@@ -24,7 +24,7 @@ For files of types jpeg, png, gif, webp and webm they would be embedded as is, s
 
 ## Building & Running
 
-This app mainly consists of a server sided nodejs app and a client files, that are served statically. You can build it manually if you plan on developing it further or for any other reason, or you can [download](./releases) the built files from the release tab if you want to skip building/packaging stages (production only).
+This app mainly consists of a server sided nodejs app and a client files, that are served statically. You can build it manually if you plan on developing it further or for any other reason, or you can [download](https://github.com/GAMMACASE/DiscordFileHost/releases) the built files from the release tab if you want to skip building/packaging stages (production only).
 
 Preparation steps:
 * Discord server where the files would be hosted, specifically a channel that later would be used;
